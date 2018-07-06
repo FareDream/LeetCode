@@ -9,7 +9,7 @@ package Easy;
  */
 public class LeetCode_7 {
     public static void leetCode_7(){
-        System.out.println(leetcode(-123));
+        System.out.println(leetCode(-123));
     }
 
     private static int mine(int x){
@@ -43,7 +43,7 @@ public class LeetCode_7 {
      * @param x
      * @return
      */
-    private static int leetcode(int x){
+    private static int leetCode(int x){
         int rev = 0;
         while (x != 0) {
             int pop = x % 10;
