@@ -8,7 +8,7 @@ package Easy;
  * 描述：给定一个 32 位有符号整数，将整数中的数字进行反转。
  */
 public class LeetCode_7 {
-    public static void leetCode_7(){
+    public LeetCode_7(){
         System.out.println(leetCode(-123));
     }
 

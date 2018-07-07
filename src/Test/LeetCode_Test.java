@@ -1,6 +1,7 @@
 package Test;
 
 import Easy.LeetCode_1;
+import Easy.LeetCode_13;
 import Easy.LeetCode_7;
 import Easy.LeetCode_9;
 
@@ -13,6 +14,6 @@ import Easy.LeetCode_9;
  */
 public class LeetCode_Test {
     public static void main(String[] args) {
-        LeetCode_9.leetCode_9();
+        new LeetCode_13();
     }
 }

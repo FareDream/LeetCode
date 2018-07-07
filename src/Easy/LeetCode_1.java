@@ -12,7 +12,7 @@ import java.util.Map;
  *       你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
  */
 public class LeetCode_1 {
-    public static void leetCode_1(){
+    public LeetCode_1(){
         int[] ints = twoSum_3(new int[]{2, 7, 11, 15}, 9);
         for (int i = 0; i < ints.length ; i++) {
             System.out.print(ints[i]);
