@@ -1,9 +1,6 @@
 package Test;
 
-import Easy.LeetCode_1;
-import Easy.LeetCode_13;
-import Easy.LeetCode_7;
-import Easy.LeetCode_9;
+import Easy.*;
 
 /**
  * 项目名称：LeetCode
@@ -14,6 +11,6 @@ import Easy.LeetCode_9;
  */
 public class LeetCode_Test {
     public static void main(String[] args) {
-        new LeetCode_13();
+        new LeetCode_20();
     }
 }
