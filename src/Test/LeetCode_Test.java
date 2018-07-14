@@ -11,6 +11,6 @@ import Easy.*;
  */
 public class LeetCode_Test {
     public static void main(String[] args) {
-        new LeetCode_26();
+        new LeetCode_27();
     }
 }
