@@ -9,7 +9,7 @@ package Easy;
  */
 public class LeetCode_38 {
     public LeetCode_38() {
-        System.out.println(mine(2));
+        System.out.println(countAndSay(3));
     }
 
     /**
@@ -22,24 +22,51 @@ public class LeetCode_38 {
             return "1";
         }
         String str = "1";
-        String[] split = str.split("");
-        StringBuffer sb = new StringBuffer();
-        int num = 1;
-        for (int i = 0; i < split.length; i++) {
-            if(i == split.length - 1){
-                sb.append(num+""+split[i]);
-            }else{
-                if(split[i].equals(split[i + 1])){
-                    num ++;
-                    if(i == split.length - 1){
-                        num ++;
-                    }
-                }else{
+        while (n > 1){
+            StringBuffer sb = new StringBuffer();
+            String[] split = str.split("");
+            int num = 1;
+            for (int i = 0; i < split.length; i++) {
+                if(i == split.length - 1){
                     sb.append(num+""+split[i]);
-                    num = 1;
+                }else{
+                    if(split[i].equals(split[i + 1])){
+                        num ++;
+                        if(i == split.length - 1){
+                            num ++;
+                        }
+                    }else{
+                        sb.append(num+""+split[i]);
+                        num = 1;
+                    }
                 }
             }
+            n --;
+            str = sb.toString();
         }
-        return mine(n -1 );
+        return str;
+    }
+
+
+    /**
+     * 用时2ms范例
+     * @param n
+     * @return
+     */
+    public String countAndSay(int n) {
+        if(n==1)return "1";
+        else {
+            StringBuilder sb=new StringBuilder();
+            String forward =countAndSay(n-1);
+            char[] words=forward.toCharArray();
+            int i=0;
+            while(i<words.length) {
+                int j=i;
+                while(j<words.length&&words[i]==words[j])j++;
+                sb.append(j-i).append(words[i]);
+                i=j;
+            }
+            return sb.toString();
+        }
     }
 }
