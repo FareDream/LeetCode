@@ -18,7 +18,6 @@ public class LeetCode_58 {
             return 0;
         }
         String[] arrayS = s.split(" ");
-        char[] chars = arrayS[arrayS.length - 1].toCharArray();
-        return chars.length;
+        return arrayS[arrayS.length - 1].length();
     }
 }
