@@ -1,8 +1,8 @@
 LeetCode刷题记录
 ==
-* [1. 两数之和](/src/Easy/LeetCode_1.java)
-* [7. 反转整数](/src/Easy/LeetCode_7.java)
-* [9. 回文数](/src/Easy/LeetCode_9.java)
+* [1. 两数之和](src/Easy/LeetCode_1.java)
+* [7. 反转整数](src/Easy/LeetCode_7.java)
+* [9. 回文数](src/Easy/LeetCode_9.java)
 * [13. 罗马数字转整数](/src/Easy/LeetCode_13.java)
 * [14. 最长公共前缀](/src/Easy/LeetCode_14.java)
 * [20. 有效的括号](/src/Easy/LeetCode_20.java)
